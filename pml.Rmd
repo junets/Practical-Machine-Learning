@@ -64,8 +64,8 @@ registerDoParallel(cl)
 ctrl = trainControl(method="cv", number=5, verboseIter=FALSE, allowParallel = T)
 ```
 
-## Run Models and get the Accuracy
-### Random Forest
+## Run Models and get the Accuracy when out of sample.
+### Random Forest 
 ```{r rf}
 modrf = train(classe ~ ., data = training, method = 'rf', trControl = ctrl)
 predrf = predict(modrf, testing)

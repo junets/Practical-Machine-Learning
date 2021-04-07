@@ -251,8 +251,8 @@ dim(training)</code></pre>
 <h2>Set Cross Validation up</h2>
 <pre class="r"><code>ctrl = trainControl(method=&quot;cv&quot;, number=5, verboseIter=FALSE, allowParallel = T)</code></pre>
 </div>
-<div id="run-models-and-get-the-accuracy" class="section level2">
-<h2>Run Models and get the Accuracy</h2>
+<div id="run-models-and-get-the-accuracy-when-out-of-sample." class="section level2">
+<h2>Run Models and get the Accuracy when out of sample.</h2>
 <div id="random-forest" class="section level3">
 <h3>Random Forest</h3>
 <pre class="r"><code>modrf = train(classe ~ ., data = training, method = &#39;rf&#39;, trControl = ctrl)
